@@ -1,0 +1,31 @@
+extends ./layouts/index
+block slider
+    .slider
+        h1 Rio de janeiro 
+        em Aventura
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre nosotros
+        .row.mb-5
+            .col-md-6
+                p suscipit sapien commodo a. Proin faucibus dui vitae ullamcorper vestibulum. Sed aliquet nunc vel volutpat vestibulum. Mauris at auctor ex, vel varius diam. Vivamus eget consequat nisl. Donec tincidunt enim sit amet varius posuere. Vestibulum at massa aliquet nibh pulvinar dapibus. Sed pretium augue vitae libero sagittis cursus.
+
+                p ulum neque eros, sit amet iaculis ligula ultricies quis. Aliquam egestas, elit dictum fermentum ullamcorper, sem enim blandit massa, sed semper diam nibh ut lacus. In ante tellus, posuere vitae co
+            .col-md-6 
+                img(src="/img/inicio_nosotros.jpg", alt="nosotros" class="img-fluid")
+        
+        include ./layouts/viajes
+    
+    .descuento 
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Canadá
+                        p.fecha 20 de Marzo 
+                        p.precio $2,500 USD 
+    .container 
+        h2.mt-5.text-center Testimoniales
+        include ./layouts/testimonios
+
